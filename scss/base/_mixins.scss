@@ -1,0 +1,12 @@
+@mixin font-face($family, $file){
+	font-family: $family;
+}
+
+@mixin text($size, $l-height, $color, $style, $margin){
+	font-size: $size;
+	line-height: $l-height;
+	color: $color;
+	font-style: $style;
+	margin: $margin;
+}
+

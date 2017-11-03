@@ -1,0 +1,85 @@
+#contact{
+	border-top: 1px solid $border-color;
+	background-color: $fade-color;
+
+	.email{
+		text-align: center;
+		margin-top: 2rem;
+		padding-top: 1rem;
+		padding-bottom: 0.3rem;
+		color: $bright-color;
+		position: relative;
+    	transition: 0.3s all ease-in-out;
+    	position: relative;
+
+    	&:hover{
+    		color: $primary-color;
+    	}
+	}
+	.arrow{
+		top: 0;
+	    height: 50px;
+	    width: 50px;
+	    background: transparent;
+	    -webkit-transform: translateY(-49%);
+	    -ms-transform: translateY(-49%);
+	    transform: translateY(-49%);
+
+	    &:after {
+		  	content: '';
+		    position: absolute;
+		    top: -3.1rem;
+		    left: 32.5rem;
+		    border-left: 1px solid $border-color;
+		    border-top: 1px solid $border-color;
+		    width: 100%;
+		    height: 100%;
+		    -webkit-transform: rotate(-135deg) translateY(-2%);
+		    -ms-transform: rotate(-135deg) translateY(-2%);
+		    transform: rotate(-135deg) translateY(-2%);
+			background: #fff;
+
+			@media #{$information-desktop} {
+				left: 35.5rem;
+			}
+
+			@media #{$information-tablet} {
+				left: 21.5rem;
+			}
+
+			@media #{$information-phone} {
+				display: none;
+			}
+		}
+	}
+}
+
+.underline-svg {
+	width: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateY(8%) rotate(180deg);
+    -ms-transform: translateY(8%) rotate(180deg);
+    transform: translateY(8%) rotate(180deg);
+    transition: 0.5s all ease-in-out;
+
+    &:hover{
+    	-webkit-transform: translateY(2px) rotate(180deg);
+	    -ms-transform: translateY(2px) rotate(180deg);
+	    transform: translateY(2px) rotate(180deg);
+    }
+
+    .underline-svg--path {
+    shape-rendering: crispEdges;
+    fill: transparent;
+    stroke: $bright-color;
+    stroke-width: 1px;
+
+	    &:hover{
+		  stroke: $primary-color;
+	    }
+	}
+}

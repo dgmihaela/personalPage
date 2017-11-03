@@ -1,0 +1,149 @@
+/* snake load*/
+
+.js .divider .stroke {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+
+.divider-normal{
+  width: rem(60);
+}
+
+.divider{
+  height: rem(11);
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-webkit-keyframes dash {
+    to {  
+        stroke-dashoffset: 0;
+    }
+}
+
+.animation-line-cube{
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.divider .stroke-light {
+    stroke: $bright-color;
+}  
+.divider-animated {
+    display: table;
+    height: 21px;
+    width: 140px;
+    margin: auto;
+}
+.divider-animated--line {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 1.2px;
+    shape-rendering: crispEdges;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.divider-animated--side-line {
+    stroke: $bright-color;
+}
+.divider-animated--right-line {
+    -webkit-animation-delay: 1.1s;
+    animation-delay: 1.1s;
+}
+.divider-animated--square {
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+    stroke: $bright-color;
+}
+.divider {
+    height: rem(11);
+}
+.divider-normal {
+    width: 3.75rem;
+}
+.divider-small {
+    width: rem(15);
+}
+.divider .stroke {
+    fill: transparent;
+    shape-rendering: crispEdges;
+    stroke-width: rem(1);
+}
+.divider .stroke-light {
+    stroke: $bright-color;
+}
+.divider .stroke-dark {
+    stroke: #b3b3b3;
+}
+.js .divider .stroke {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+/*snake load*/
+
+
+
+
+/* romb load divider*/
+.no-js .hero--wrapper {
+    display: none;
+}
+.no-svg .hero--wrapper {
+    display: none;
+}
+.no-svg .divider {
+    display: none;
+}
+.heading-group {
+    text-align: center;
+}
+.heading-group--small-heading {
+    letter-spacing: 0.02rem;
+}
+.heading-group--link {
+    position: relative;
+    transition: 0.3s all ease-in-out;
+}
+.heading-group--link:hover {
+    color: $primary-color;
+}
+/* romb load divider*/
+
+
+/* underline*/
+.underline-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateY(8%) rotate(180deg);
+    -ms-transform: translateY(8%) rotate(180deg);
+    transform: translateY(8%) rotate(180deg);
+    transition: 0.5s all ease-in-out;
+}
+.underline-svg:hover {
+    -webkit-transform: translateY(2px) rotate(180deg);
+    -ms-transform: translateY(2px) rotate(180deg);
+    transform: translateY(2px) rotate(180deg);
+}
+.underline-svg--path {
+    shape-rendering: crispEdges;
+    fill: transparent;
+    stroke: $primary-color;
+    stroke-width: 1px;
+}
+.underline-svg--path-gold {
+    stroke: #b7a17b;
+}
+
+
+
+
+
+

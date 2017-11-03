@@ -1,0 +1,41 @@
+.hl-1{
+     @include text(rem(30), 2, #ffffff, normal, 0);
+}
+.hl-2{
+    @include text(rem(20), 1.5, #ffffff, normal, 0);
+}
+.hl-3{
+    @include text(rem(20), 1.5, $bright-color, italic, 0);
+}
+.hl-4{
+    @include text(rem(30), 1.5, $primary-color, normal, 0);
+}
+.hl-5{
+    @include text(rem(20), 1.5, $primary-color, normal, 0);
+}
+.hl-6{
+	@include text(rem(16), 1.5, $primary-color, normal, 0);
+    margin: 0 auto;
+    width: 60%;
+
+    @media #{$information-tablet} {
+    width: 100%;
+    }
+}
+
+
+.headline--group {
+    position: relative;
+    bottom: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -25%);
+    -ms-transform: translate(-50%, -25%);
+    transform: translate(-50%, -25%);
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 1rem;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+ 

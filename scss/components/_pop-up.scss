@@ -1,0 +1,156 @@
+.tooltiptext {
+	position: relative;
+	width:67.5rem;
+	display: none;
+	background-color: #fff;
+	border-radius: rem(6);
+	border: 1px solid #dcddde;
+	right: 18rem; 
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 2rem;
+	top: 6rem;
+	z-index: 1000;
+
+	@media #{$information-tablet} {
+		width:100%;
+		left: rem(80);
+	}
+	@media #{$information-phone} {
+			width:100%;
+			right: 0;
+		}
+
+	&__title{
+		font-family: $text-font;
+		@include text(1.5rem, 1.5rem, #64686d, normal, 0);
+		font-weight: bold;
+	}
+
+	.icon-Close{
+		display: inline-block;
+		float: right;
+		transform: rotate(45deg);
+		font-weight: bold;
+		font-size: rem(30);
+		cursor: pointer;
+		color: $bright-color;
+	}
+
+	&:after {
+	  content: '';
+	  position: absolute;
+	  bottom: 100%;
+	  left: 50%;
+	  margin-left: -8px;
+	  width: 0; height: 0;
+	  border-bottom: 8px solid #efebe6;
+	  border-right: 8px solid transparent;
+	  border-left: 8px solid transparent;
+	}
+}
+
+.work{
+	border-bottom: 1px solid $border-color;
+	background-color: $fade-color;
+   
+}
+ .work-new{
+	width:67rem;
+
+	@media #{$information-tablet} {
+		width:100%;
+	}
+	@media #{$information-phone} {
+		width:100%;
+		right: 0;
+	}
+}
+ .box--left{
+
+ 	.item--small__first{
+ 		margin-top: 20px;
+
+ 		@media #{$information-tablet} {
+			width:100%;
+		}
+ 	}
+ 	.item--small__second{
+ 		margin-top: 277px; 
+ 		margin-left: -353px;
+
+ 		@media #{$information-tablet} {
+			width:100%;
+			margin-left: 0;
+			margin-top: 0; 
+		}
+ 	}
+ 	.item--big{
+ 		margin-top: 20px;
+
+ 		@media #{$information-tablet} {
+			width:100%;
+		}
+ 	}
+ }
+.box--right{
+	.item--big{
+		margin-top: 20px;
+
+		@media #{$information-tablet} {
+			width:100%;
+		}
+	}
+	.item--small__first{
+		margin-top: 20px;
+		
+		@media #{$information-tablet} {
+			width:100%;
+		}
+	}
+	.item--small__second{
+		margin-top: 268px; 
+		margin-left: -353px;
+
+		@media #{$information-tablet} {
+			width:100%;
+			margin-top: 0;
+			margin-left: 0;
+		}
+	}
+}
+.box--wide__two{
+	.item--small{
+		margin-top: 20px;
+
+		@media #{$information-tablet} {
+			width:100%;
+		}
+	}
+}
+.box--wide__three{
+	.item--small__first{
+		margin-top: 20px;
+
+		@media #{$information-tablet} {
+			width:100%;
+		}
+	}
+	.item--small__second{
+		margin-top: 258px; 
+		margin-left: -353px;
+
+		@media #{$information-tablet} {
+		width:100%;
+		margin-top: 0; 
+		margin-left: 0;
+	}
+	}
+	.item--big{
+		margin-top: 20px;
+
+		@media #{$information-tablet} {
+			width:100%;
+		}
+	}
+}

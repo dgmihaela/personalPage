@@ -1,0 +1,113 @@
+
+
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_8356">Text with this font applied</p> */
+.fontsforweb_fontid_8356 {
+  font-family: 'MontserratRegular' !important;
+}
+
+@font-face {
+  font-family: 'MontserratRegular';
+  src:  url('../../fonts/MontserratRegular.eot');
+  src:  url('../../fonts/MontserratRegular.woff') format('embedded-opentype'),
+    url('../../fonts/MontserratRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+footer,header,section{
+	display:block;
+}
+
+
+html{
+	font-family:sans-serif;-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+  width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body{
+  font-family: 'MontserratRegular' !important;
+  font-size: 1.5rem;
+  line-height: 1.47;
+  width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+  @media #{$information-phone} {
+      width: 100%;
+    }
+}
+
+svg:not(:root) {
+    overflow: hidden;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+     @include text(rem(16), 2, $primary-color, normal, 0);
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.container{
+  width: rem(1080);
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+   @media #{$information-desktop} {
+      width: 100%;
+    }
+  @media #{$information-phone} {
+    padding-bottom: 2rem;
+  }
+}
+
+section{
+  text-align: center;
+  width: 100%;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
